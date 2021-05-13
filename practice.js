@@ -313,7 +313,9 @@ let lastName = "Jones";
 // The returned value should include a space between the first and last names and should use concatenation (not template strings)
 
 // Code here
-
+function createName(){
+  return firstName + ' ' + lastName
+}
 
 
 //////////////////PROBLEM 21////////////////////
@@ -321,7 +323,9 @@ let lastName = "Jones";
 // Create a function called showMeSeven that returns the number 7
 
 // Code here
-
+function showMeSeven(){
+  return 7
+}
 
 
 //////////////////PROBLEM 22////////////////////
@@ -329,8 +333,10 @@ let lastName = "Jones";
 // Create a function called multiplier that takes two parameters (numbers) and returns the product of the two parameters
 
 // Code here
-
-
+function multiplier(num1, num2){
+  return num1 * num2
+}
+// multiplier(1,2)
 
 //////////////////PROBLEM 23////////////////////
 
@@ -339,7 +345,9 @@ let lastName = "Jones";
 // The returned value should include a space between the greeting and name parameters
 
 // Code here
-
+function sayHello(greeting, name){
+  return greeting + ' ' + name
+}
 
 
 //////////////////PROBLEM 24////////////////////
@@ -350,7 +358,12 @@ let lastName = "Jones";
   // the second property should be duration with the value of the second parameter
 
 // Code here
-
+function makeExercise(exerciseName, duration){
+  return {
+    exerciseName: exerciseName,
+    duration: duration
+  }
+}
 
 
 //////////////////PROBLEM 25////////////////////
@@ -360,12 +373,17 @@ let age = "TBD";
 // Do not edit the code above.
 
 
-// Inside the isOldEnough function, write an if/else statement that will return "old enough" if the age variable is greater than 21 and returns "not yet" otherwise
-// Use the if and else keywords in your solution
+// Inside the isOldEnough function, write an if/else statement that will return "old enough" if the age variable is greater than 21
+// and returns "not yet" otherwise use the if and else keywords in your solution
 // The variable age will be changed during testing
 
 function isOldEnough(){
   // Code here
+  if(age > 21){
+    return "old enough"
+  }else{
+    return "not yet"
+  }
 };
 
 
@@ -377,12 +395,18 @@ let workEthic = "TBD";
 // Do not edit the code above.
 
 
-// Inside the successPredictor function, write an if/else statement that will return "success at DevMountain" if the workEthic variable is "great" and returns "failure at DevMountain" otherwise
+// Inside the successPredictor function, write an if/else statement that will return "success at DevMountain" if the workEthic
+// variable is "great" and returns "failure at DevMountain" otherwise
 // Use the if and else keywords in your solution
 // The variable workEthic will be changed during testing
 
 function successPredictor(){
   // Code here
+  if(workEthic === "great"){
+    return "success at DevMountain"
+  }else{
+    return "failure at DevMountain"
+  }
 };
 
 
@@ -400,6 +424,11 @@ let cookieType = "TBD";
 
 function eatOrTrash(){
   // Code here
+  if(cookieType === "raisin"){
+    return "throw in trash"
+  }else{
+    return "eat"
+  }
 };
 
 
@@ -412,12 +441,18 @@ let yourTeamScore = "TBD";
 // Do not edit the code above.
 
 
-// Inside the finalScore function, write an if/else statement that will return "we are the champions" if the myTeamScore variable is greater than the yourTeamScore variable and returns ":(" otherwise
+// Inside the finalScore function, write an if/else statement that will return "we are the champions" if the myTeamScore variable
+// is greater than the yourTeamScore variable and returns ":(" otherwise
 // Use the if and else keywords in your solution
 // The myTeamScore and yourTeamScore variables will be changed during testing
 
 function finalScore(){
   // Code here
+  if(myTeamScore > yourTeamScore){
+    return "we are the champions"
+  }else{
+    return ":("
+  }
 };
 
 
@@ -429,7 +464,8 @@ age = "TBD";
 // Do not edit the code above.
 
 
-// Inside the findCorrectTransportation function, write an if/else statement that will check the age variable and return the correct response according to the following criteria:
+// Inside the findCorrectTransportation function, write an if/else statement that will check the age variable and return
+// the correct response according to the following criteria:
   // if age is from 3 to 7, return "tricycle"
   // if age is from 8 to 15, return "bicycle"
   // if age is greater than 15, return "car"
@@ -439,6 +475,13 @@ age = "TBD";
 
 function findCorrectTransportation(){
   // Code here
+  if(age > 15){
+    return "car"
+  }else if(age >= 8 && age <= 15){
+    return "bicycle"
+  }else if (age <= 7 & age >= 3){
+    return "tricycle"
+  }
 };
 
 
@@ -451,7 +494,8 @@ let temp = "TBD";
 // Do not edit the code above.
 
 
-// Inside the doIGetIceCream function, write an if/else statement that will check the cash and temp variables and return the correct response according to the following criteria:
+// Inside the doIGetIceCream function, write an if/else statement that will check the cash and temp variables and
+// return the correct response according to the following criteria:
   // if temp is equal to "hot" and money is true, return "Get Ice Cream!"
   // otherwise return "Save up for another day."
 
@@ -460,6 +504,11 @@ let temp = "TBD";
 
 function doIGetIceCream(){
   // Code here
+  if(temp === "hot" && cash === true){
+    return "Get Ice Cream!"
+  }else{
+    return "Save up for another day."
+  }
 };
 
 
@@ -480,6 +529,9 @@ let work = "TBD";
 
 function doIHaveFreeTime(){
   // Code here
+  if(!chores || !work){
+    return "free time!"
+  }
 };
 
 
@@ -493,7 +545,8 @@ let brakes = "TBD";
 // Do not edit the code above.
 
 
-// Inside the setCrash function, write an if/else statement that will set the value of crash to true if currentSpeed is "fast" and brakes is false and does nothing otherwise
+// Inside the setCrash function, write an if/else statement that will set the value of crash to true if currentSpeed
+// is "fast" and brakes is false and does nothing otherwise
 
 // In your solution, be sure to use the logical NOT operator (bang operator) instead of using true or false keywords
 // Use the if and else keywords in your solution
@@ -502,6 +555,9 @@ let brakes = "TBD";
 
 function setCrash(){
   // Code here
+  if(currentSpeed === "fast" && !brakes){
+    return crash = true
+  }
 };
 
 
@@ -517,14 +573,21 @@ user = {
 
 
 // Write a function called makePurchase that takes in a parameter called priceOfItem
-// If priceOfItem is less than or equal to the total on the user object (provided), have the makePurchase function subtract priceOfItem from the user's total
+// If priceOfItem is less than or equal to the total on the user object (provided), have the makePurchase function
+// subtract priceOfItem from the user's total
 // If the priceOfItem is greater than the user total, makePurchase should return "not enough funds"
 
 // Use the if and else keywords in your solution
 // The arguments passed into makePurchase will always be numbers and will be changed during testing
 
 // Code here
-
+function makePurchase(priceOfItem){
+  if(priceOfItem <= user.total){
+    return user.total -= priceOfItem
+  }else{
+    return "not enough funds"
+  }
+}
 
 
 //////////////////PROBLEM 34////////////////////
@@ -545,7 +608,8 @@ function sleep(){
 // Do not edit the code above.
 
 
-// Write a function called decisionMaker that takes two parameters hungry and tired and and reacts according to the following criteria:
+// Write a function called decisionMaker that takes two parameters hungry and tired and and reacts according to the
+// following criteria:
   // if hungry is true and tired is false, invoke the eat function (provided)
   // if hungry is false and tired is true, invoke the sleep function (provided)
   // otherwise, return the string "undecided"
@@ -555,3 +619,12 @@ function sleep(){
 // The arguments passed into decisionMaker will always be true or false and will be changed during testing
 
 // Code here
+function decisionMaker(hungry, tired){
+  if(hungry && !tired){
+    return eat()
+  }else if(!hungry && tired){
+    return sleep()
+  }else{
+    return "undecided"
+  }
+}
