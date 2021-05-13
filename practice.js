@@ -5,7 +5,8 @@
 // After the first variable, make a variable named farewell with a data type of string that says 'Goodbye' (with single quotes)
 
 // Code here
-
+let greeting = "Hi"
+let farewell = 'Goodbye'
 
 
 //////////////////PROBLEM 2////////////////////
@@ -15,7 +16,9 @@
 // Concatenate hello and userName together and store the result in a variable called salutation
 
 //Code here
-
+let hello = "Hello"
+let userName = "Josh"
+let salutation = hello + userName
 
 
 //////////////////PROBLEM 3////////////////////
@@ -23,7 +26,7 @@
 //Create a variable called seven that has a number data type with the value of 7
 
 //Code here
-
+let seven = 7
 
 
 //////////////////PROBLEM 4////////////////////
@@ -32,7 +35,7 @@
 // This datatype should be a number
 
 //Code here
-
+let money = 100000
 
 
 //////////////////PROBLEM 5////////////////////
@@ -40,7 +43,7 @@
 // Make a variable called awesome and give it a value of the boolean data type true
 
 //Code here
-
+let awesome = true
 
 
 //////////////////PROBLEM 6////////////////////
@@ -54,7 +57,7 @@ let myCar = "Jeep";
 
 
 //Code here
-
+myCar = null
 
 
 //////////////////PROBLEM 7////////////////////
@@ -63,7 +66,24 @@ let myCar = "Jeep";
 // Each item should be an object, and each object should have 2 properties: name (string) and age (number)
 
 //Code here
-
+let users = [
+  {
+    name: "Josh",
+    age: 30
+  },
+  {
+    name: "Adam",
+    age: 24
+  },
+  {
+    name: "Asuka",
+    age: 31
+  },
+  {
+    name: "Hyuga",
+    age: 4
+  }
+]
 
 
 //////////////////PROBLEM 8////////////////////
@@ -74,7 +94,23 @@ let myCar = "Jeep";
 // Each hobbies property will have a corresponding value which will be an object
 
 //Code here
+let family = {
+  josh: {
+    hobbies: {
 
+    }
+  },
+  adam: {
+    hobbies: {
+
+    }
+  },
+  hyuga: {
+    hobbies: {
+
+    }
+  }
+}
 
 
 //////////////////PROBLEM 9////////////////////
@@ -83,7 +119,7 @@ let myCar = "Jeep";
 // Each item should be an array with 2 items (numbers) in each array
 
 //Code here
-
+let gameScores = [[1,1], [2,2], [3,3]]
 
 
 //////////////////PROBLEM 10////////////////////
@@ -92,7 +128,23 @@ let myCar = "Jeep";
 // Each object should have 3 properties: name (string), gender (string), height (number) in each array
 
 //Code here
-
+let people = [
+  {
+    name: "Josh",
+    gender: "male",
+    height: 5
+  },
+  {
+    name: "Adam",
+    gender: "male",
+    height: 6
+  },
+  {
+    name: "Quin",
+    gender: "male",
+    height: 2
+  },
+]
 
 
 //////////////////PROBLEM 11////////////////////
@@ -101,7 +153,11 @@ let myCar = "Jeep";
 // This object should have 3 properties: name (string), state (string), favoriteCountrySong (string)
 
 //Code here
-
+let cowboy = {
+  name: "Josh",
+  state: "Utah",
+  favoriteCountrySong: "Ghetto Cowboy"
+}
 
 
 //////////////////PROBLEM 12////////////////////
@@ -131,7 +187,7 @@ function launch() {
 
 
 //Code here
-
+let dataTypes = [42, "meaning", true, [1,2,3,4,5], spaceship, launch]
 
 
 //////////////////PROBLEM 13////////////////////
@@ -139,7 +195,7 @@ function launch() {
 // Edit the function called "sum" so that when it is invoked, it returns the sum of its parameters num1 and num2
 
 function sum(num1, num2){
-  return // Code here
+  return num1 + num2
 };
   
 
@@ -149,12 +205,13 @@ function sum(num1, num2){
 // Create two variables number1 and number2 and assign them number values
 
 // Code here
-
+const number1 = 10
+const number2 = 20
 
 // Next, edit the function called "multiply" so that when it is invoked, it returns the result of multiplying number1 and number2
 
 function multiply() {
-  return // Code here
+  return number1 * number2
 };
 
 
@@ -170,7 +227,7 @@ let food = 'pizza';
 // In your solution code, use template strings (not concatenation) and use the food variable provided
 
 function favFood(){
-  return // Code here
+  return `My favorite food is ${food}`
 };
 
 
@@ -186,8 +243,8 @@ let theBoss;
 // Edit the function assignName so that when it is invoked with the variable theName passed in as an argument,
 // the function assigns the value of theName to theBoss variable
 
-function assignName(name){
-  // Code here
+function assignName(theName){
+  return theBoss = theName
 };
 
 
@@ -207,7 +264,7 @@ let user = {
 // edit the function getName so that it accesses the name property of the user object and returns its value
 
 function getName(userObj){
-  return // Code here
+  return user.name
 };
 
 
@@ -229,7 +286,7 @@ let calendar = {
 // Make sure you are accessing it from the weekDays array of the calendar object
 
 function getWeekDay(calendar){
-  return // Code here
+  return calendar.weekDays[2]
 }
 
 
@@ -239,7 +296,9 @@ function getWeekDay(calendar){
 // Create a function called "fn" that takes in a parameter and returns that parameter
 
 // Code here
-
+function fn(name){
+  return name
+}
 
 
 //////////////////PROBLEM 20////////////////////
